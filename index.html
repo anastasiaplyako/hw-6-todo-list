@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<header><h1>ToDo list</h1></header>
+<main>
+    <div class="container">
+        <div class="todo-add">
+            <form class="container__form">
+                <input class="todo-input" autofocus type="text" aria-label="Enter a new todo item"
+                       placeholder="Введите таску">
+                <input type="text" class="todo-deadline" name="birthday">
+                <button class="todo-button" type="submit">+</button>
+                <div class="select">
+                    <select name="todos" class="filter-todo">
+                        <option value="All">Все задачи</option>
+                        <option value="completed">Завершенные задачи</option>
+                        <option value="uncompleted">Незавершенные задачи</option>
+                        <option value="tomorrow">Дедлайн завтра</option>
+                        <option value="week">Дедлайн-неделя</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+        <div class="todo-container">
+            <ul class="todo-list">
+            </ul>
+        </div>
+    </div>
+</main>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"/>
+
+<script type="module" src="./js/List.js"></script>
+<script type="module" src="./js/CreateTask.js"></script>
+<script type="module" src="./js/main2.js"></script>
+</body>
+</html>

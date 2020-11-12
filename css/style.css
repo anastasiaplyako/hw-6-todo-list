@@ -1,0 +1,139 @@
+html {
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.body {
+    width: 100vw;
+    min-height: 100vh;
+}
+
+main {
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+}
+
+form button {
+    cursor: pointer;
+}
+
+.todo-add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-input, .todo-deadline, .todo-button, select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    box-shadow: 2px -2px 5px rgba(0, 0, 0, 0.2), -2px -2px 5px rgba(0, 0, 0, 0.2)
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo {
+    width: 100%;
+    background-color: white;
+    margin: 10px 0 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px -2px 5px rgba(0, 0, 0, 0.2)
+}
+
+.todo-button {
+    background-color: white;
+}
+
+.todo li {
+    width: 100%;
+    flex: 1;
+}
+
+.complete-button, .trash-button {
+    border: none;
+    padding: 13px;
+}
+
+.trash-button {
+    color: #ff2a2a;
+    border: 1px solid #ff2a2a;
+    background-color: white;
+    width: 50px;
+}
+
+.complete-button {
+    background-color: white;
+    color: #25b633;
+    border: 1px solid #25b633;
+    margin: 0 5px;
+}
+
+.todo-item {
+    padding: 0rem 0.5rem;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+select {
+    margin: 10px;
+}
+
+.select {
+    display: flex;
+    justify-content: center;
+}
+
+.date-deadline {
+    font-size: 13px;
+}
+
+ul {
+    width: 100%;
+}
+
+@media screen and (max-width: 422px) {
+
+    .todo-add {
+        text-align: center;
+    }
+
+    input, .todo-button {
+        width: 80%;
+    }
+
+    .todo-button {
+        box-shadow: none;
+        background-color: #25b633;
+        margin: 10px 0 0 0 ;
+    }
+
+}
+
+
